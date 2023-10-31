@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!-- Fondo de la imagen de placeholder -->
+        <item>
+            <bitmap
+                android:src="@drawable/placeholder_image"
+                android:gravity="center" />
+        </item>
+
+        <!-- Texto sobre la imagen -->
+        <item
+            android:gravity="center">
+            <shape
+                android:shape="rectangle">
+                <solid android:color="#88000000" /> <!-- Color de fondo semi-transparente -->
+            </shape>
+        </item>
+
+        <!-- Texto -->
+        <item
+            android:gravity="center">
+
+        </item>
+
+
+</layer-list>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".fragments.TabFragment2"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Simular descuento"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container_view_form_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.practice_firebase.fragments.formDiscountFragment"
+            tools:layout= "@layout/fragment_form_discount"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        app:contentPaddingTop="8dp"
+        app:contentPaddingBottom="8dp">
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragment_container_view_result_form_discount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.example.practice_firebase.fragments.resultDiscountFormFragment"
+            tools:layout= "@layout/fragment_result_discount_form"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

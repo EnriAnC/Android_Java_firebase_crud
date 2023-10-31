@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TabItemText">
+        <item name="android:textSize">10sp</item> <!-- Ajusta el tamaño del texto aquí -->
+    </style>
+
+</resources>

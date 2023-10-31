@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.TabsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TabItemText"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+
+            <com.google.android.material.tabs.TabItem
+                android:text="Productos"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+            <com.google.android.material.tabs.TabItem
+                android:text="Calculadora"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <com.google.android.material.tabs.TabItem
+                android:text="Notificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                 />
+
+        </com.google.android.material.tabs.TabLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager2"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_gravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_menu_add"
+        app:maxImageSize="58dp"
+        android:focusable="true" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
